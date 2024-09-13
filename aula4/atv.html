@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 04</title>
+    <title>Formulário para o Candidato</title>
 </head>
 <body>
 </body>
@@ -18,11 +18,11 @@
    
     
    
-        <label for="nameuser"> Email:
+        <label for="nameemail"> Email:
         <input type="email" id="nameemail" name="nomeemail" placeholder="Digite seu E-mail"><br>
     </label><br>
 
-    <label for="nameuser"> Cargo da Tecnologia:
+    <label for="cargo"> Cargo da Tecnologia:
        <select id="Cargo" name="Cargo">
         <option value="pds">Pessoa Desenvolvedora</option>
         <option value="ADS">Analista de Sistemas</option>
@@ -34,28 +34,28 @@
    <br>
 
     <label for="sexo">Gênero:</label>
-    <input type="radio" id="masc" name="masc">
+    <input type="radio" id="masc" name="sexo" value="masc">
     <label for ="masculino">Masculino</label>
-    <input type="radio" id="masc" name="masc">
-    <label for ="masculino">Feminino</label>
-    <input type="radio" id="masc" name="masc">
-    <label for ="masculino">Outro</label><br>
+    <input type="radio" id="fem" name="sexo" value="fem">
+    <label for ="Feminino">Feminino</label>
+    <input type="radio" id="outro" name="sexo" value="outro">
+    <label for ="Outro">Outro</label><br>
 
 <br>
    <label for="cidade">Unidade de Interrese:</label>
-    <input type="checkbox" id="masc" name="masc">
+    <input type="checkbox" id="Eusébio" name="cidade" value="Eusébio">
     <label for ="Eusébio">Eusébio</label>
-    <input type="checkbox" id="masc" name="masc">
+    <input type="checkbox" id="Fortaleza" name="cidade" value="Fortaleza">
     <label for ="Fortaleza">Fortaleza</label>
-    <input type="checkbox" id="masc" name="masc">
+    <input type="checkbox" id="Caucaia" name="cidade" value="Caucaia">
     <label for ="Caucaia">Caucaia</label><br>
 
 <br>
     <label for="textarea">Fale mais sobre Você:</label><br>
-    <textarea type="message" id="message" name="message" cols="30"  rows="3"  maxlength="500"></textarea><br>
+    <textarea type="message" id="message" name="textarea" cols="30"  rows="3"  maxlength="500" value="areaText"></textarea><br>
 
 
-    <input type="button" value="Enviar">    
+    <input type="submit" value="Enviar">   
     
 </label>
 </form>
