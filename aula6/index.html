@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6</title>
+    <style>
+        .content{
+            width: 700px;
+            height: 700px;
+            background-color: lawngreen;
+        }
+        .cor1{
+            background-color: mediumaquamarine;
+            width: 200px;
+            height: 100px;
+            display: block;
+        }
+        .cor2{
+            background-color: mediumaquamarine;
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+        }
+        h3{
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display</h1>
+        <h3>inline-block</h3>
+        <div class="content">
+            <!-- inline block, meio que uma junção das duas. em bloco e em linha. -->
+         <h3 class="cor2">CONTEUDO</h3>   
+         <h3 class="cor2">CONTEUDO</h3> 
+         <hr>  
+         <h3>block</h3>   
+         <!-- block, pode ser mudado de tamanho naturalmente, e é colocado um em baixo do outro -->
+         <h3 class="cor1">CONTEUDO</h3>   
+         <h3 class="cor1">CONTEUDO</h3>  
+         <hr>
+        <!-- display inline, mudado com css para block -->
+         <h3>Display inline para block</h3>
+         <a class="cor1" href="">A</a> 
+          <!-- display inline, naturalmente não pode ser aumentado com width ou height, mas pode ser mudado com css -->
+          <hr> 
+          <h3>Display inline e none</h3>
+         <a style="background-color: aquamarine; " href="">Conteudo</a> 
+         <!-- usado para "apagar" algo da tela -->
+         <a style="background-color: aquamarine; display: none;" href="">conteudo</a> 
+
+        </div>
+    </header>
+</body>
+</html>

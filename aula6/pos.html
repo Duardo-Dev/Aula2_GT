@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .conteudo{
+          background-color: rgb(174, 153, 148);
+          
+          /* quando não definimos um tamanho pra div, ela vai se auto dar um tamanho  */
+          
+        }
+      
+    .caixa1{
+        background-color: greenyellow;
+        width: 200px;
+        height: 200px;
+      /* Posiciona o quadrado na camada em que está escrita */
+       z-index: 1;
+         /* se posiciona atrás de plano normal da página, não seguindo os parametros padrões do body e da página, quando a página é diferente de static */
+          position: absolute; 
+        display: inline-block;
+       margin: 20px;
+    }
+    .caixa2{
+        background-color: rgb(47, 200, 255);
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        display: inline-block;
+       position: relative;
+       z-index: 1;
+       
+        /* é relativo aos padroes do body */
+        
+        
+        
+      
+    }
+    .caixa3{
+        background-color: rgb(251, 26, 26);
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        
+        display: inline-block;
+    
+        
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <div class="conteudo">
+        <div class="caixa1"></div>
+        <div class="caixa2"></div>
+        <div class="caixa3"></div>
+    </div>
+    <div class="conteudo2">
+    <div class="caixa1"></div>
+</div>
+
+
+</body>
+</html>
