@@ -1,34 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     width: 100vw;
     height: 100vh;
-    font-size:62.5%;
+    font-size: 62.5%;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    background: linear-gradient(rgb(16, 16, 16, 0.5), rgb(25, 25, 25, 0.5)), url(oficina.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
 }
-body{
-    background: linear-gradient(rgb(16,16,16,0.6), rgb(25,25,25,0.5)),url(oficina.jpg);
-background-position:center center;
-background-size: cover;
-background-repeat:no-repeat;
-    
-   
-}
-header{
+
+header {
     width: 100%;
-    height: 6vw;
-    background:rgb(21, 20, 20);
-    color: white;
+    height: 7vw;
+    background: rgba(204, 194, 81, 0.947);
 }
-.menu{
+
+.menu {
     text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
+}
+
+.logo {
+    font-size: 2.3rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu .lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.menu .lista-menu a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transition: 2ms ease-in;
+    position: relative;
+}
+
+
+.menu .lista-menu a:before{
+    content:'';
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(93, 77, 77);
+    transition: all 1s ease;
+
+}.menu .lista-menu a:hover:before{
+    width: 100%;
+    background-color:rgb(245, 28, 28);
+}
+main{
+height:80vh;
+display: flex;
+justify-content: center;
+
+gap: 15px;
+}
+.main-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+color:rgba(255, 255, 255, 0.600);
+font-size:20px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding:15px;
+    font-size:1.6rem;
+
+}
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    max-width: 1350px;
+    margin:15px;
+    margin-bottom:0 auto;
+    padding:20px;
+
+
 }
