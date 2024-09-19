@@ -94,7 +94,7 @@ footer{
 }
 .footer-container{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: flex-start;
     max-width: 1350px;
     margin:15px;
@@ -102,4 +102,31 @@ footer{
     padding:20px;
 
 
+}
+
+#name{
+    height: 20px;
+    width: 500px
+}
+#email{
+    height: 20px;
+    width: 500px;
+
+    
+    
+}
+#button{
+
+    width: 100%;
+    background-color: rgb(255, 255, 21);
+    height: 30px;
+}
+.foto-menu{
+    display: flex;
+    
+    height:25px;
+    cursor: pointer;
+
+
+    
 }
