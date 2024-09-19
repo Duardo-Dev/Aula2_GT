@@ -1,3 +1,4 @@
+*
 * {
     margin: 0;
     padding: 0;
@@ -22,21 +23,22 @@ body {
 header {
     width: 100%;
     height: 7vw;
-    background: rgba(204, 194, 81, 0.947);
+    background: rgb(199, 183, 1, 0.947);
 }
 
 .menu {
     text-transform: uppercase;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px;
     align-items: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .logo {
-    font-size: 2.3rem;
-    letter-spacing: 0.4rem;
+    display:flex;
+    width:40px;
     cursor: pointer;
 }
 
@@ -55,51 +57,90 @@ header {
     position: relative;
 }
 
-
-.menu .lista-menu a:before{
-    content:'';
-    position:absolute;
-    bottom:0px;
-    left:0px;
+.menu .lista-menu a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
     width: 0px;
     height: 2px;
-    background-color: rgb(93, 77, 77);
+    background-color: wheat;
     transition: all 1s ease;
+}
 
-}.menu .lista-menu a:hover:before{
+.menu .lista-menu a:hover:before{
     width: 100%;
-    background-color:rgb(245, 28, 28);
+    background-color: yellow;
 }
-main{
-height:80vh;
-display: flex;
-justify-content: center;
 
-gap: 15px;
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.main-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content:center;
-color:rgba(255, 255, 255, 0.600);
-font-size:20px;
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 228, 228);
+    font-size: 20px;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
-    padding:15px;
-    font-size:1.6rem;
-
+    padding: 20px 0;
+    font-size: 1.6rem;
 }
-.footer-container{
-    display:flex;
-    justify-content:space-around;
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     max-width: 1350px;
-    margin:15px;
-    margin-bottom:0 auto;
-    padding:20px;
-
-
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
 }
+
+.footer-form, .footer-contact {
+    flex: 1;
+    margin: 0 100px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+
