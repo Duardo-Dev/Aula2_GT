@@ -80,7 +80,7 @@
 
     ul {
         list-style-type: none; /* Remove os pontos da lista */
-        padding: 0;
+        padding: 0px;
     }
 
     li {
@@ -115,7 +115,7 @@
     footer{
         background-color: rgb(28, 28, 127);
        /* espaçamento interno*/
-         height: 20px;
+         padding: 20px;
         text-align: center;
         color:aliceblue;
     }

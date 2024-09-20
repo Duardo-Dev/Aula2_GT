@@ -76,18 +76,63 @@ header {
 main {
     height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.main-content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 228, 228);
-    font-size: 20px;
+    
+}
+
+.h1{
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+.h3{
+    
+    text-align: center;
+    justify-self:center;
+}
+.card button{
+    width: 100px;
+    
+    background-color:saddlebrown;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+   
+
+
+    
+}
+
+.card button:hover {
+    background-color: #a79700;
+}
+
+
+
+.main-h1{
+    width: 100%;
+    height: 100px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+ 
+   
+}
+.containers{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+
+width: 350px;
+height: 350px;
+background-color: rgb(255, 228, 228,0.7);
+border-radius: 10px;
+text-align: center;
 }
 
 footer {
@@ -119,6 +164,7 @@ footer {
 .footer-form form {
     display: flex;
     flex-direction: column;
+
 }
 
 .footer-form label {
@@ -130,6 +176,7 @@ footer {
     padding: 5px;
     font-size: 1.4rem;
 }
+
 
 .footer-form button {
     padding: 10px;
